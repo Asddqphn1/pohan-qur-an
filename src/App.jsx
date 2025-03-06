@@ -37,7 +37,7 @@ function App() {
       <div className="w-full h-screen lg:w-2/3 border-none bg-white rounded-2xl p-4  ">
         <HeaderContent detailSurat={detailSurat}/>
         <DropdownQori setQori={setQori} surah={surat} setNomor={setNomor} />
-        <main className="fixed lg:absolute top-68 lg:top-55 h-120 left-0 lg:left-114 overflow-y-scroll lg:h-100 lg:w-[64.5%]  border-none rounded-2xl bg-gray-200 p-3 mirza">
+        <main className="fixed lg:absolute top-62 lg:top-55 h-120 left-0 lg:left-114 overflow-y-scroll lg:h-100 lg:w-[64.5%]  border-none rounded-2xl bg-gray-200 p-3 mirza">
           {detailSurat.ayat?.map((ayat) => (
             <CardDetailSurah key={ayat.teksArab} ayat={ayat} qori={qori} />
           ))}

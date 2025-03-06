@@ -1,6 +1,6 @@
 const DropdownQori = ({ setQori, surah, setNomor }) => {
   return (
-    <div className="fixed top-45 right-4 lg:top-35 lg:right-10 flex gap-5">
+    <div className="fixed top-40 right-4 lg:top-35 lg:right-10 flex gap-5">
       <div className="ml-3">
         <label htmlFor="qari" className="block text-gray-700 font-medium mb-2">
           Qari
