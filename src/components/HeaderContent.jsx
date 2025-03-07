@@ -1,6 +1,6 @@
 const HeaderContent = ({detailSurat}) => {
     return (
-      <header className="w-full p-4 border fixed lg:w-[64.5%] h-30 top-5 left-0 lg:top-5 lg:left-223 lg:-translate-x-1/2  rounded-4xl bg-linear-65 from-purple-500 to-pink-500 text-white mirza"> 
+      <header className="w-full p-4 border fixed lg:w-[64.5%] h-30 top-5 left-0 lg:top-5 lg:left-105 rounded-4xl bg-linear-65 from-purple-500 to-pink-500 text-white mirza"> 
         <h1 className="text-2xl font-bold ">
           {detailSurat.nama} - <span>{detailSurat.namaLatin}</span>
         </h1>

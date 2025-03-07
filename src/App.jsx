@@ -26,18 +26,18 @@ function App() {
     
   }, [nomor]);
 
-  
+
   return (
     <div className="flex gap-0 lg:gap-12 bg-gray-200">
-      <div className="h-screen overflow-y-scroll flex flex-col gap-4 p-4 bg-white">
+      <div className="h-screen overflow-y-scroll flex flex-col gap-4 p-2 bg-white w-2/5">
         {surat.map((surah) => (
           <CardListSurah key={surah.nomor} surah={surah} setNomor={setNomor} />
         ))}
       </div>
-      <div className="w-full h-screen lg:w-2/3 border-none bg-white rounded-2xl p-4  ">
-        <HeaderContent detailSurat={detailSurat}/>
+      <div className="w-full h-screen xl:w-full border-none bg-white -left-5 rounded-2xl p-4 relative">
+        <HeaderContent detailSurat={detailSurat} />
         <DropdownQori setQori={setQori} surah={surat} setNomor={setNomor} />
-        <main className="fixed lg:absolute top-62 lg:top-55 h-120 left-0 lg:left-114 overflow-y-scroll lg:h-100 lg:w-[64.5%]  border-none rounded-2xl bg-gray-200 p-3 mirza">
+        <main className="absolute lg:absolute top-62 lg:top-55 h-120 left-0 lg:left-0 overflow-y-scroll lg:h-115 lg:w-full border-none rounded-2xl bg-gray-200 p-3 mirza">
           {detailSurat.ayat?.map((ayat) => (
             <CardDetailSurah key={ayat.teksArab} ayat={ayat} qori={qori} />
           ))}

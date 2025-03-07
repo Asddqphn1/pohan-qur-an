@@ -5,7 +5,9 @@ const CardDetailSurah = ({ ayat, qori }) => {
     <div key={ayat.nomor}>
       <p className="text-right text-4xl/25">
         {ayat.teksArab}{" "}
-        <span className="mr-3">{convertToArabicNumeric(ayat.nomorAyat)}</span>
+        <span className='-mr-5 before:content-["(۝)"] before:relative before:-left-13 before:text-right'>
+          {convertToArabicNumeric(ayat.nomorAyat)}
+        </span>
       </p>
       <p className="text-md font-mono text-red-600">{ayat.teksLatin}</p>
       <p className="text-md">{ayat.teksIndonesia}</p>
